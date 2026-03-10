@@ -31,14 +31,3 @@ Proyek ini dibangun menggunakan teknologi modern yang berfokus pada performa dan
 * **Backend:** Next.js API Routes / Server Actions
 * **Database:** Neo4j AuraDB (Graph Database) / Supabase *(Pilih salah satu nanti saat sudah fix)*
 * **Deployment:** Vercel
-
----
-
-## 🚀 Cara Menjalankan di Komputer Lokal (Local Setup)
-
-Ikuti langkah-langkah berikut untuk menjalankan proyek ini di mesin lokal kamu:
-
-**1. Clone Repositori**
-```bash
-git clone [https://github.com/USERNAME_KAMU/interactive-family-tree.git](https://github.com/USERNAME_KAMU/interactive-family-tree.git)
-cd interactive-family-tree
