@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-  ],
+, "src/lib/neo4j.ss", "src/lib/neo4j.js"  ],
   "exclude": ["node_modules"]
 }

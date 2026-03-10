@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,14 +20,29 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="id">
+      <body className={`${geistSans.variable} ${geistMono.variable} bg-gray-50 text-gray-900` }>
+        {/* NAVBAR */}
+        <nav className="bg-blue-600 text-white p-4 shadow-md flex justify-between items-center z-50 relative">
+          <h1 className="text-xl font-bold tracking-wide">👨‍👩‍👧‍👦 Keluarga Besar</h1>
+          <div className="space-x-6 font-medium">
+            <Link href="/" className="hover:text-blue-200 transition">
+              Beranda
+            </Link>
+            <Link href="/tentang" className="hover:text-blue-200 transition">
+              Tentang
+            </Link>
+            <Link href="/silsilah" className="hover:text-blue-200 transition">
+              Silsilah
+            </Link>
+          </div>
+        </nav>
+
+        {/* KONTEN HALAMAN */}
         {children}
       </body>
     </html>
